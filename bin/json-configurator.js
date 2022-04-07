@@ -4,7 +4,7 @@
 const fs = require('fs');
 const _ = require('lodash');
 const config = require('../index.js');
-const argv = require('optimist').argv;
+const argv = require('minimist').argv;
 
 if (_.isEmpty(argv._ )) {
 	process.stdin.on('readable', function (){
